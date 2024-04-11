@@ -1,0 +1,2069 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*
+html {
+    scroll-behavior: smooth;
+}*/
+
+
+body {
+    margin-top: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ------------------Estilos generales----------------------*/
+
+h1 {
+    font-size: 4.5em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+button {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: #099348;
+}
+
+button:hover {
+    background-color: #126136;
+    box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5);
+}
+
+/*----------------------- Estilos especificos:--------------------*/
+.centrar-texto {
+    text-align: center;
+}
+
+.justificar-texto {
+    text-align: justify;
+    margin: 0 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.color-acentoR {
+    color: #d7222e;
+}
+
+.color-acentoV {
+    color: #099348;
+}
+
+.fondo {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    justify-content: center;
+    border-radius: 3em 0 3em 0;
+    box-shadow: 8px 8px 15px rgba(255, 255, 255, 0.3);
+    margin-bottom: 0;
+}
+
+.fondoOferta {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    margin: 30px;
+    height: 250px;
+    width: 300px;
+    justify-content: center;
+    box-shadow: 8px 8px 15px rgba(255, 255, 255, 0.3);
+    margin-bottom: 30px;
+    border-radius: 1.5em 0 1.5em 0;
+}
+
+.fondoOferta p {
+    display: none;
+}
+
+
+
+/*------- estilos de navegacion*/
+header {
+
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+
+}
+
+/*
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/PortadaServiagrofinca.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 0 0 3em 3em;
+}
+*/
+#heroInit h1,
+h2,
+h3 {
+    color: #ffffff;
+    position: relative;
+
+}
+
+
+
+#heroInit img {
+    position: relative;
+}
+
+#heroInit .containerOne {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px opx;
+
+}
+
+#heroInit .slider input {
+    visibility: hidden;
+    display: none;
+}
+
+#heroInit .buttons {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 50px;
+    gap: 10px;
+}
+
+#heroInit .buttons label {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 40%;
+    opacity: 0.5;
+    cursor: pointer;
+    z-index: 1;
+    transition: 300ms ease-in-out;
+}
+
+#heroInit .buttons label:hover {
+    scale: 1.4;
+    opacity: 1;
+}
+
+#heroInit .slider input:nth-child(1):checked~.buttons label:nth-child(1),
+#heroInit .slider input:nth-child(2):checked~.buttons label:nth-child(2),
+#heroInit .slider input:nth-child(3):checked~.buttons label:nth-child(3) {
+    opacity: 1;
+    scale: 1.4;
+    width: 30px;
+}
+
+#heroInit .content {
+    position: relative;
+    width: 300vw;
+    display: flex;
+    transition: 400ms ease-in-out;
+}
+
+#heroInit .firstSlide,
+.secondSlide,
+.thirdSlide {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+#heroInit .firstSlide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+}
+
+#heroInit .secondSlide {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    text-align: justify;
+    flex-direction: column;
+    color: white;
+
+}
+
+#heroInit .secondSlide h2,
+h3 {
+    padding-left: 50px;
+}
+
+#heroInit .thirdSlide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+}
+
+
+
+#heroInit .slider input:nth-child(1):checked~.content {
+    left: 0;
+}
+
+#heroInit .slider input:nth-child(2):checked~.content {
+    left: -100vw;
+}
+
+#heroInit .slider input:nth-child(3):checked~.content {
+    left: -200vw;
+}
+
+
+
+
+
+
+
+
+
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+#heroNosotros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    color: white;
+}
+
+#heroNosotros button {
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+#heroServicios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/PortadaTrabajaCon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#heroServicios button {
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+#heroContacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/portadaContacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#heroContacto button {
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+#heroSedes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/portadaSedes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 3em;
+}
+
+#heroSedes button {
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+#heroOferta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgba(30, 30, 30, 0.7);
+    color: white;
+    margin-bottom: 0;
+    background-image: url(img/colaboradores2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 3em;
+}
+
+#heroOferta h1 {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+#heroOferta button {
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+
+#heroPoliticas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/portadaPoliticas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 3em;
+}
+
+#heroPoliticas button {
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+#heroPecuario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/asistenciaPecuaria.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+#heroPecuario button {
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+/* seccion nuestros servivios*/
+
+#nuestros-servicios {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-servicios .container {
+    padding: 100px 0px;
+}
+
+#nuestros-servicios h2 {
+    margin-top: 0;
+    font-size: 2.1em;
+
+}
+
+#nuestros-servicios p {
+    display: none;
+    padding: 5px;
+}
+
+#nuestros-servicios .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 30px;
+    border-radius: 20px;
+
+}
+
+#nuestros-servicios .carta:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/asistenciaPecuaria.avif);
+}
+
+#nuestros-servicios .carta:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/asistenciaAgronoma.avif);
+
+}
+
+#nuestros-servicios .carta:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/asistenciaSanidad.avif);
+
+}
+
+#nuestros-servicios .carta:nth-child(4) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/limpieza.jpg);
+
+}
+
+
+
+/* seccion listo para comenzar*/
+
+#caracteristicas {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/caracteristicas.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+}
+
+#caracteristicas .container {
+    text-align: initial;
+    padding: 50px 50px;
+
+}
+
+#caracteristicas .p {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+#final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 70vh;
+}
+
+#final h2 {
+    font-size: 9vw;
+}
+
+#final button {
+    font-size: 5vw;
+}
+
+
+.footer-links {
+    background: rgba(104, 101, 101, 0.9);
+    color: white;
+    font-size: 12px;
+    padding: 35px 0;
+    border-radius: 3em;
+}
+
+.footer-links ul li {
+    line-height: 1.8;
+
+}
+
+.footer-links h3 {
+    color: white;
+
+}
+
+.footer-links h4 {
+    color: white;
+
+}
+
+.footer-container {
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.footer-container ul {
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+/* ---------------------------PG nosotros ------------------------*/
+
+#ubicaciones {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+    height: 100vh;
+}
+
+#ubicaciones .container {
+    padding: 100px 0px;
+}
+
+#ubicaciones .h2 {
+    margin-top: 0;
+    font-size: 2.1em;
+}
+
+#ubicaciones p {
+    display: none;
+}
+
+#ubicaciones .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 30px;
+    border-radius: 20px;
+
+}
+
+#ubicaciones .carta:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/trabajo.jpg);
+}
+
+#ubicaciones .carta:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/ubicacion.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/*SECCION NOSOTROS*/
+.seccion-nosotros {
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+
+#sobre-nosotros h2 {
+    padding-top: 30px;
+
+}
+
+#sobre-nosotros .contenedor-sobrenosotros {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#sobre-nosotros .div-2-nosotros {
+    text-align: justify;
+    width: 90%;
+    margin-right: 1em;
+
+}
+
+#sobre-nosotros .div-2-nosotros h3 {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#sobre-nosotros .div-2-nosotros p {
+    margin-top: 0%;
+    margin-bottom: 2em;
+}
+
+.div-1-nosotros img {
+    display: none;
+}
+
+/* SECCION BLOG */
+.seccion-inferior {
+
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+
+}
+
+.seccion-inferior .testimoniales {
+    flex-basis: calc(40% - 2rem);
+}
+
+.entrada-blog {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.entrada-blog .imagen-entrada {
+    display: none;
+}
+
+.entrada-blog .texto-entrada {
+    justify-content: center;
+    margin-right: 15px;
+    margin-left: 15px;
+
+}
+
+.texto-entrada h4 {
+    text-align: center;
+    margin-left: 3em;
+    line-height: 1.4;
+
+}
+
+.texto-entrada a {
+    color: #d7222e;
+    text-decoration: none;
+}
+
+
+/*SECCION CONTACTO*/
+
+.containerForms {
+    margin: 30px;
+
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 18px 0px;
+    border-radius: 2rem;
+    border-bottom: 1px solid rgba(68, 7, 7, 0.603);
+    font-size: 17px;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 18px 0px;
+    font-size: 17px;
+    resize: none;
+}
+
+#escribenos {
+    text-align: center;
+}
+
+#informacion a {
+    display: inline-block;
+    border: 0;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    color: rgb(0, 0, 0);
+    background-color: #d7222e;
+    padding: 1.4rem 2rem;
+    text-decoration: none;
+    margin: 5px;
+}
+
+#informacion ul {
+    display: inline-block;
+    border: 0;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    color: white;
+    padding: 1.4rem 2rem;
+    text-decoration: none;
+}
+
+#informacion {
+    background: url(img/contacto.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+}
+
+.contacto-info {
+    text-align: center;
+    display: inline;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+}
+
+.contacto-info i {
+    font-size: 21px;
+}
+
+/* ---------------------------PG SERVICIOS ------------------------*/
+
+/* SECCION TARGETAS*/
+
+#targeta .container {
+    max-width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+}
+
+#targeta .new-cards {
+    display: flexbox;
+    margin-bottom: 2em;
+
+}
+
+#targeta .new-cards h3 {
+    margin-top: 3em;
+    font-size: 20px;
+}
+
+#targeta .new-cards p {
+    font-size: 15px;
+    margin-top: 3em;
+    margin-bottom: 5em;
+}
+
+#targeta .new-cards a {
+    padding: 10px 10px;
+    color: #d7222e;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    display: inline-block;
+    font-weight: bold;
+}
+
+#targeta .new-cards a:hover {
+    color: #099348;
+    text-decoration: underline;
+}
+
+#targeta .targeta1 {
+    border-radius: 10px;
+    box-shadow: 8px 8px 15px rgba(15, 15, 15, 0.9);
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/agricultura.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 2em;
+}
+
+#targeta .targeta2 {
+    border-radius: 10px;
+    box-shadow: 8px 8px 15px rgba(15, 15, 15, 0.9);
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/ganaderia.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 2em;
+}
+
+#targeta .targeta3 {
+    border-radius: 10px;
+    box-shadow: 8px 8px 15px rgba(15, 15, 15, 0.9);
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/porcicultura.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 2em;
+}
+
+#targeta .targeta4 {
+    border-radius: 10px;
+    box-shadow: 8px 8px 15px rgba(15, 15, 15, 0.9);
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/conicultura.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 2em;
+
+}
+
+
+/* SECCION BANNER*/
+
+#banner1 {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    margin-bottom: 2em;
+    min-width: 100%;
+    border-radius: 2em;
+    height: 650px;
+}
+
+#banner1 .container {
+    width: 80%;
+    height: 600px;
+    margin: 2em;
+    padding: 30px 0 0 30px;
+}
+
+#banner1 .container p h2 {
+    margin: 10px 0 20px 0;
+    padding: 10px;
+}
+
+#baner1 .fondo {
+    padding: 10px 10px;
+}
+
+/*BANNER 2*/
+#banner2 {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/banner2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    margin-bottom: 2em;
+    min-width: 100%;
+    border-radius: 2em;
+
+}
+
+#banner2 .container {
+    width: 80%;
+    height: 400px;
+    margin: 2em;
+    padding: 30px 0 0 30px;
+    height: 600px;
+}
+
+#banner2 .container p h2 {
+    margin: 10px 0 20px 0;
+    padding: 10px;
+}
+
+#baner2 .fondo {
+    padding: 10px 10px;
+}
+
+/*banner 3*/
+
+#banner3 {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/banner3.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    margin-bottom: 2em;
+    min-width: 100%;
+    border-radius: 2em;
+}
+
+#banner3 .container {
+    width: 80%;
+    height: 400px;
+    margin: 2em;
+    padding: 30px 0 0 30px;
+
+}
+
+#banner3 .container p h2 {
+    margin: 10px 0 20px 0;
+    padding: 10px;
+}
+
+#baner3 .fondo {
+    padding: 10px 10px;
+}
+
+
+/*SECCION NUESTRAS SEDES*/
+#nuestras-sedes {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+    border-radius: 3EM;
+}
+
+#nuestras-sedes .container {
+    padding: 100px 0px;
+}
+
+#nuestras-sedes h2 {
+    margin-top: 0;
+    font-size: 2.1em;
+
+}
+
+#nuestras-sedes p {
+    display: none;
+}
+
+#nuestras-sedes .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 30px;
+    border-radius: 20px;
+
+}
+
+#nuestras-sedes .carta:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/chiquinquira.jpg);
+
+
+}
+
+#nuestras-sedes .carta:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/ubate.jpeg);
+
+}
+
+#nuestras-sedes .carta:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/simijaca.jpeg);
+
+}
+
+#nuestras-sedes .carta:nth-child(4) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/duitama.jpeg);
+}
+
+/*REDES SOCIALES*/
+.social {
+    margin: 50px;
+}
+
+.social p {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    margin: 0 30px;
+}
+
+/* ---------------------------PG contácto------------------------*/
+
+.maps {
+    display: aline;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+    width: 1100px;
+    max-width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 50px 20px;
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.5);
+    position: relative;
+    border-radius: 3em;
+}
+
+.maps p {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.maps h2 {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.formulario {
+    width: 600px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.5);
+    position: relative;
+    border-radius: 3em;
+}
+
+.formulario_titulo {
+    text-align: center;
+    margin-top: 0;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.formulario_checkbox {
+    margin-right: 10px;
+    font-size: large;
+    width: 25px;
+    height: 25px;
+
+}
+
+.formulario_input,
+.formulario_label,
+.formulario_submit,
+.formulario_textarea {
+    display: block;
+    width: 100%;
+    font-size: 1.3em;
+    padding-left: 20px;
+    border-radius: 0.5em;
+}
+
+.formulario_input {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: auto;
+    margin-top: 40px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.formulario_input:focus {
+    outline: 2px solid rgba(0, 0, 0, 0.9);
+}
+
+.formulario_input:focus+.formulario_label {
+    margin-top: -110px;
+}
+
+
+
+.formulario_label {
+    padding-left: 15px;
+    position: absolute;
+    margin-top: -55px;
+    z-index: -20;
+    color: rgba(0, 0, 0, 0.5);
+    transition: all 0.2s;
+}
+
+.formulario_submit {
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    margin: 10px 10px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.fijar {
+    margin-top: -110px;
+}
+
+.warnings {
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #099348;
+    padding-top: 20px;
+}
+
+.terminos {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+/* ---------------------------Pagina trabaja con nosotros */
+#PorQueTrabajar .container {
+    margin: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#PorQueTrabajar .container h1 {
+    text-align: center;
+}
+
+
+#nuestro_recorrido {
+
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+#nuestro_recorrido .container {
+    padding: 50px 0;
+    margin-top: 0;
+}
+
+#nuestro_recorrido h2 {
+    margin-top: 0;
+    font-size: 2.1em;
+}
+
+
+
+#nuestro_recorrido .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 10px 50px;
+    margin: 30px;
+    border-radius: 20px;
+    color: white;
+
+}
+
+#nuestro_recorrido .fa-solid {
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    color: white;
+}
+
+
+
+#nuestro_recorrido .carta:first-child {
+    background-image: url(img/colaboradores1Rec.png);
+}
+
+#nuestro_recorrido .carta:nth-child(2) {
+    background-image: url(img/colaboradores2Rec.png);
+
+}
+
+#nuestro_recorrido .carta:nth-child(3) {
+    background-image: url(img/colaboradores3Rec.png);
+
+}
+
+#nuestro_recorrido .carta:nth-child(4) {
+    background-image: url(img/Limpieza.Rec.png);
+
+}
+
+/**/
+#SomosServi2 .container {
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    margin: 0;
+
+}
+
+#SomosServi2 h2 {
+    margin-top: 0px;
+    text-align: center;
+    color: #099348;
+}
+
+#SomosServi2 .texto {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#SomosServi2 .img_container {
+    display: none;
+}
+
+#SomosServi2 .ofertabtn input {
+    color: #ffffff;
+    background-color: #099348;
+    padding: 10px 20px;
+    margin-right: 100px;
+    margin-bottom: 90px;
+    cursor: pointer;
+    border-radius: 15px;
+    justify-content: center center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+#SomosServi2 .ofertabtn input:hover {
+    background-color: #126136;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.7);
+}
+
+
+/*------------*/
+#SomosServi3 .container {
+    display: inline;
+    justify-content: center;
+    width: 100%;
+}
+
+#SomosServi3 h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+#SomosServi3 .texto {
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+
+#SomosServi3 .img_container1 {
+    display: block;
+    background-image: url(img/ganadero.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15PX;
+    box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.7);
+    height: 500px;
+    width: 80%;
+    margin-bottom: 10px;
+    margin-left: 40px;
+
+
+}
+
+#SomosServi3 .img_container2 {
+    display: block;
+    background-image: url(img/agricultor.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15PX;
+    box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.7);
+    height: 500px;
+    width: 80%;
+    margin-bottom: 60px;
+    margin-left: 40px;
+}
+
+
+#SomosServi3 .ofertabtn input {
+    color: white;
+    background: rgba(38, 39, 38, 0.7);
+    padding: 10px 20px;
+    margin-right: 100px;
+    cursor: pointer;
+    border-radius: 15px;
+    justify-content: center center;
+    align-items: center;
+    width: 97%;
+}
+
+/*------------*/
+#SomosServi4 .container {
+    display: inline;
+    justify-content: center center;
+    margin: 100px 100px;
+}
+
+#SomosServi4 h2 {
+    margin-top: 50px;
+}
+
+#SomosServi4 .texto {
+    text-align: justify;
+    padding-left: 50px;
+    text-align: initial;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#SomosServi4 .img_container1 {
+    display: block;
+    background-image: url(img/administrativo.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15PX;
+    box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.7);
+    height: 500px;
+    width: 80%;
+    margin-bottom: 10px;
+    margin-left: 35px;
+}
+
+#SomosServi4 .img_container2 {
+    display: block;
+    background-image: url(img/administrativo2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15PX;
+    box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.7);
+    height: 500px;
+    width: 80%;
+    margin-bottom: 10px;
+    margin-left: 35px;
+}
+
+#SomosServi4 .ofertabtn input {
+    color: white;
+    background: rgba(38, 39, 38, 0.7);
+    padding: 10px 20px;
+    margin-right: 100px;
+    cursor: pointer;
+    border-radius: 15px;
+    justify-content: center center;
+    align-items: center;
+    width: 97%;
+}
+
+/* somos servipecuario*/
+#SomosServiPec {
+    margin: 0;
+}
+
+#SomosServiPec .container {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    padding-right: 10px;
+}
+
+#SomosServiPec .img_container {
+    background-image: url(img/imagenNosotros.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 3em;
+    height: 500px;
+    width: 400px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+#SomosServiPec h2 {
+    margin-top: 50px;
+}
+
+#SomosServiPec .texto {
+    padding-left: 50px;
+    text-align: center;
+
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 20px;
+}
+
+
+/* seccion pg politicas*/
+
+.container-Politicas {
+    max-width: 1200px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+
+}
+
+.container-Politicas h2 h3 p {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.politicas-style {
+    background: white;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    padding: 35px 35px;
+    border-radius: 3em;
+}
+
+.politicas-style ul li {
+    line-height: 1.8;
+
+}
+
+.politicas-style h3 p ul li {
+    text-align: justify;
+
+}
+
+#pdf {
+    display: block;
+    justify-content: center;
+    margin: 20px 20px;
+}
+
+#pdf object {
+    width: 100%;
+    height: 400px;
+}
+
+
+/*---------------------seccion footer--------------------*/
+a {
+    text-decoration: none;
+    font-size: 17px;
+    font-size: 17px;
+}
+
+a:hover {
+    color: #099348 !important;
+}
+
+i {
+    font-size: 25px;
+}
+
+
+/* Seccion formulario de contacto*/
+
+
+
+@keyframes popup {
+    0% {
+        width: 0rem;
+        height: 0rem;
+    }
+
+    50% {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    100% {
+        width: 3.3rem;
+        height: 3.3rem;
+    }
+}
+
+/* responsive design */
+
+@media (min-width: 900px) {
+
+    /*estilos barra de navegacion*/
+
+    #hero h1 {
+        font-size: 4em;
+    }
+
+    #SomosServi .container {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 3em 3em;
+    }
+
+    #SomosServi h2 {
+        margin-top: 0px;
+    }
+
+    #SomosServi .texto {
+        text-align: justify;
+        padding-left: 50px;
+        text-align: initial;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #SomosServi .img_container {
+        background-image: url(img/imagenNosotros.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 3em;
+        height: 500px;
+        width: 400px;
+        box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+    }
+
+    #SomosServi .img_container:hover {
+        width: 410px;
+        height: 500px;
+    }
+
+    #nuestros-servicios .servicios {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #nuestros-servicios p {
+        display: block;
+        font-size: 1em;
+        margin-bottom: 30px;
+    }
+
+
+    #nuestros-servicios .carta {
+        padding: 20px;
+        background-size: 100% 160px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(80, 80, 80, 0.5);
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.9);
+    }
+
+    #nuestros-servicios .carta h2 {
+        margin-top: 10px;
+        margin-bottom: 60px;
+    }
+
+    #nuestros-servicios .carta button {
+        padding-bottom: 10px;
+    }
+
+
+
+    #nuestros-servicios .carta:first-child {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.3),
+                rgba(0, 0, 0, 0.3)), url(img/AsistenciaPecuariaRec.png);
+    }
+
+    #nuestros-servicios .carta:nth-child(2) {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.3),
+                rgba(0, 0, 0, 0.3)), url(img/AsistenciaAgronomaRec.png);
+
+    }
+
+    #nuestros-servicios .carta:nth-child(3) {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url(img/asistenciaSanidadRec.png);
+
+    }
+
+    #nuestros-servicios .carta:nth-child(4) {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.3),
+                rgba(0, 0, 0, 0.3)), url(img/Limpieza.Rec.png);
+
+    }
+
+    #caracteristicas ul {
+
+        margin-left: 100px;
+    }
+
+    #final h2 {
+        font-size: 4em;
+    }
+
+    #final button {
+        font-size: 2em;
+    }
+
+
+
+    /* pg nosotros */
+
+    /* seccion ubicaciones */
+
+    #ubicaciones .ofertas {
+        display: flex;
+        justify-content: center;
+    }
+
+    #ubicaciones p {
+        display: block;
+        font-size: 1em;
+        margin-bottom: 30px;
+    }
+
+    #ubicaciones .carta {
+        padding: 15px;
+        background-color: rgba(50, 50, 50, 0.5);
+        box-shadow: 2px 2px 10px rgba(15, 15, 15, 0.9);
+    }
+
+    /*RESPONSIVE NOSOTROS*/
+    .seccion-nosotros {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    #sobre-nosotros .contenedor-sobrenosotros {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    #sobre-nosotros .div-2-nosotros {
+        text-align: justify;
+        width: 53%;
+    }
+
+    #sobre-nosotros .div-2-nosotros h3 {
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+
+    #sobre-nosotros .div-2-nosotros p {
+        margin-top: 0%;
+        margin-bottom: 2em;
+    }
+
+    .div-1-nosotros img {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 460px;
+        height: 560px;
+        padding: 2em;
+        border-radius: 5rem;
+    }
+
+    /* responsive blog */
+    .seccion-inferior {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .entrada-blog {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+
+    .entrada-blog .imagen-entrada {
+        display: block;
+        flex-basis: 40%;
+    }
+
+    .texto-entrada h4 {
+        margin: 0;
+        line-height: 1.4;
+
+    }
+
+    .texto-entrada a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    /* responsive contacto */
+    .contacto-info {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 60px;
+
+    }
+
+    .contacto-info i {
+        font-size: 21px;
+    }
+
+    #banner1 .container {
+        height: 400px;
+    }
+
+    #banner2 .container {
+
+        height: 400px;
+
+    }
+
+    /* ---------------------------PG servicios ------------------------*/
+
+    /* responsive targetas*/
+    #targeta .container {
+        max-width: 100%;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    #targeta .new-cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+
+    }
+
+    #targeta .new-cards img {
+        width: 100%;
+        height: 500px;
+    }
+
+    #targeta .new-cards h3 {
+        margin-top: 3em;
+        font-size: 20px;
+    }
+
+    #targeta .new-cards a {
+        padding: 10px 0;
+        color: #d7222e;
+
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+        font-weight: bold;
+    }
+
+    #targeta .new-cards a:hover {
+        color: #099348;
+        text-decoration: underline;
+    }
+
+    /* SECCION BANNER*/
+
+    #banner1 {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url(img/banner.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        color: white;
+        margin-bottom: 2em;
+        min-width: 700px;
+        border: 2em;
+        height: 350px;
+
+    }
+
+    #banner1 .container p,
+    h2 {
+        margin: 10px 0 20px 0;
+    }
+
+    #nuestras-sedes .sedes {
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestras-sedes p {
+        display: block;
+        font-size: 1em;
+        margin-bottom: 30px;
+    }
+
+    #nuestras-sedes .carta {
+        padding: 15px;
+        background-color: rgba(50, 50, 50, 0.5);
+        box-shadow: 2px 2px 10px rgba(15, 15, 15, 0.9);
+    }
+
+    /*----------------------PG contacto--------------*/
+
+
+
+
+    /*----------------------PG TRABAJA CON NOSOTROS--------------*/
+
+    .fondoOferta {
+        color: black;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 20px;
+        margin: 30px;
+        height: 250px;
+        width: 900px;
+        justify-content: center;
+        box-shadow: 8px 8px 15px rgba(255, 255, 255, 0.3);
+        margin-bottom: 30px;
+        border-radius: 1.5em 0 1.5em 0;
+    }
+
+    .fondoOferta p {
+        display: block;
+    }
+
+    #PorQueTrabajar .container {
+        justify-content: center;
+        text-align: justify;
+        max-width: 100%;
+        margin: 0;
+        padding: 20px 90px;
+
+    }
+
+    #nuestro_recorrido .servicios {
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestro_recorrido p {
+        display: block;
+        font-size: 1em;
+        margin-bottom: 30px;
+    }
+
+    #nuestro_recorrido .carta {
+        padding: 20px;
+        background-size: 100% 160px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(223, 222, 222, 0.8);
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.9);
+        color: black;
+    }
+
+
+    /*secciom ofertas laborales*/
+    #SomosServi2 .container {
+        display: flex;
+        justify-content: center;
+        margin-right: 50px;
+    }
+
+
+    #SomosServi2 h2 {
+        margin-top: 0px;
+    }
+
+    #SomosServi2 .texto {
+        text-align: justify;
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: initial;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #SomosServi2 .img_container {
+        display: block;
+        background-image: url(img/TeBuscamosaTi.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 15PX;
+        box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.7);
+        height: 500px;
+        width: 100%;
+        margin-bottom: 10px;
+
+    }
+
+    #SomosServi2 .ofertabtn {
+        justify-content: center center;
+
+    }
+
+
+    /*------------*/
+
+    #SomosServi3 .container {
+        display: flex;
+        justify-content: center center;
+        margin-right: 0;
+    }
+
+    #SomosServi3 h2 {
+        margin-top: 50px;
+    }
+
+    #SomosServi3 .texto {
+        text-align: justify;
+        padding-left: 50px;
+        text-align: initial;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+
+
+    /*------------------------------*/
+
+    #SomosServi4 .container {
+        display: flex;
+        justify-content: center center;
+        margin-right: 0;
+    }
+
+    #SomosServi4 .texto {
+        text-align: justify;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    #SomosServi4 .img_container1 {
+
+        margin-bottom: 0;
+
+    }
+
+
+
+    .go-top-button {
+        width: 0rem;
+        height: 0rem;
+        background: #099348;
+        border-radius: 50%;
+        cursor: pointer;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+
+    #SomosServiPec .img_container {
+        background-image: url(img/imagenNosotros.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 3em;
+        height: 500px;
+        width: 400px;
+        box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+        display: block;
+    }
+
+
+    /* responsive contacto*/
+    #pdf object {
+        width: 100%;
+        height: 650px;
+    }
+
+}
+
+
+
+
+@media (min-width:400px) {
+    #hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 120vh;
+        color: white;
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url(img/PortadaServiagrofinca.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+}
